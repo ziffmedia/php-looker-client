@@ -1,0 +1,39 @@
+{
+    "name": "ziffmedia/looker",
+    "type": "library",
+    "require": {
+        "symfony/http-client": "^6.2"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "ZiffMedia\\Looker\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Josh Butts",
+            "email": "josh.butts@ziffmedia.com"
+        }
+    ],
+    "require-dev": {
+        "pestphp/pest": "^2.6",
+        "cebe/php-openapi": "^1.7",
+        "nette/php-generator": "^4.0",
+        "symfony/var-dumper": "^6.2",
+        "laravel/pint": "^1.10",
+        "orchestra/testbench": "^8.5"
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "ZiffMedia\\Looker\\LookerServiceProvider"
+            ]
+        }
+    }
+}
